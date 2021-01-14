@@ -1,0 +1,262 @@
+/* Police */
+
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script&display=swap');
+/* body */
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+/* header et footer */
+
+.hetf {
+    background-color: #ecc4a2b3;
+    font-size: 16pt;
+    backdrop-filter: blur(2px);
+}
+
+nav input[type=submit] {
+    border: none;
+    background: transparent;
+    font-size: 15pt;
+    letter-spacing: 3px;
+    color: rgb(122, 76, 43);
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: underline;
+    outline: none;
+}
+
+header ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    letter-spacing: 3px;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(122, 76, 43);
+}
+
+a:hover {
+    text-shadow: 1px 2px 2px rgb(122, 76, 43);
+}
+
+footer nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color: rgb(122, 76, 43);
+}
+
+footer aside {
+    font-weight: bold;
+}
+
+/* main */
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 22pt;
+}
+
+#main_form {
+    flex-direction: row;
+    width: 80%;
+    justify-content: space-around;
+    align-self: center;
+    flex-grow: 1;
+}
+
+#main_form aside {
+    display: flex;
+    width: 45%;
+    justify-content: center;
+}
+
+#main_livreor {
+    flex-direction: row;
+}
+
+#main_livreor figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 0.1;
+}
+
+figcaption {
+    font-size: 20pt;
+    color: rgb(122, 76, 43);
+    font-weight: bold;
+}
+
+/* sections */
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+}
+
+section form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+    height: 450px;
+    width: 80%;
+    justify-content: space-evenly;
+    border-radius: 30px 30px 30px 30px;
+    border-color: rgba(236, 196, 162);
+    font-family: 'Roboto Mono', monospace;
+    color: rgb(122, 76, 43);
+}
+
+#titre {
+    /* titre formulaire */
+    display: flex;
+    justify-content: center;
+    border-radius: 30px 30px 30px 30px;
+    width: 60%;
+    color: rgb(122, 76, 43);
+    font-size: 22pt;
+    font-weight: bold;
+    font-family: 'Roboto Mono', monospace;
+}
+
+form article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20pt;
+}
+
+#form {
+    width: 50%;
+}
+
+#accueil {
+    background-color: rgba(236, 196, 162, 0.7);
+    border-radius: 30px 30px 30px 30px;
+    border-color: rgba(236, 196, 162);
+    backdrop-filter: blur(2px);
+    flex-grow: 0.1;
+    font-family: 'Dancing Script', cursive;
+}
+
+#accueil img {
+    width: 600px;
+    position: relative;
+}
+
+#accueil #p1 {
+    position: absolute;
+    top: 45%;
+    font-size: 28pt;
+}
+
+#accueil #p2 {
+    position: absolute;
+    top: 55%;
+    font-size: 28pt;
+}
+
+.commentaire {
+    flex-direction: row;
+    justify-content: start;
+    flex-grow: 1;
+}
+
+.commentaire article {
+    display: flex;
+    width: 59%;
+    overflow: auto;
+    flex-direction: column;
+    height: 60vh;
+    margin-left: 10px;
+    margin-top: 110px;
+}
+
+#noconnect article {
+    width: 47%;
+    margin-left: 400px;
+}
+
+.commentaire p {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    font-family: 'Dancing Script', cursive;
+    color: rgb(30, 83, 37);
+    font-size: 20pt;
+}
+
+.commentaire h1 {
+    font-weight: bold;
+    font-size: 15pt;
+}
+
+/* styles pour les echo  */
+
+.warning {
+    color: red;
+    font-weight: bold;
+    font-size: 18pt;
+}
+
+.login {
+    color: rgb(122, 76, 43);
+    letter-spacing: 2px;
+}
+
+/* Style input */
+
+input:not([type=submit]) {
+    width: 200px;
+    height: 30px;
+    border-color: rgb(122, 76, 43);
+    background: rgb(255, 255, 255, 0.5);
+    text-align: center;
+    border-radius: 20px 60px 20px 60px;
+    font-size: 15pt;
+    color: rgb(97, 60, 33);
+    font-weight: bold;
+    outline: none;
+}
+
+textarea {
+    width: 200px;
+    height: 150px;
+    border-color: rgb(122, 76, 43);
+    border-radius: 10px 25px 10px 25px;
+}
+
+input[type=submit] {
+    border-color: rgb(122, 76, 43);
+    background-color: rgb(122, 76, 43);
+    color: white;
+    font-size: 18pt;
+    border-width: 10px;
+}
+
+input:not([type=submit]):focus, textarea:focus {
+    background-color: rgba(122, 76, 43, 0.5);
+}
